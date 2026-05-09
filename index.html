@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABR Panel - Professional SMM Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">ABR<span>Panel</span></div>
+        <div class="header-icons">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon active"></i>
+            <i class="fas fa-sync-alt"></i>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" alt="User">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Dashboard -->
+    <main>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-user-circle"></i>
+                <div>
+                    <p>Username</p>
+                    <h3>ABR_User</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-wallet"></i>
+                <div>
+                    <p>Remaining balance</p>
+                    <h3>$0.00</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-money-bill-wave"></i>
+                <div>
+                    <p>Total Cost</p>
+                    <h3>$0.00</h3>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-shopping-cart"></i>
+                <div>
+                    <p>Total Orders</p>
+                    <h3>0</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Icons Bar -->
+        <div class="social-bar">
+            <button><i class="fab fa-facebook-f"></i></button>
+            <button><i class="fab fa-instagram"></i></button>
+            <button><i class="fab fa-telegram-plane"></i></button>
+            <button><i class="fab fa-youtube"></i></button>
+            <button><i class="fab fa-whatsapp"></i></button>
+        </div>
+
+        <!-- Order Section -->
+        <div class="order-container">
+            <div class="order-header">
+                <button class="active"><i class="fas fa-cart-plus"></i> Create Order</button>
+                <button><i class="fas fa-plus-circle"></i> Add Funds</button>
+            </div>
+            
+            <div class="order-form">
+                <label>Category</label>
+                <select>
+                    <option>Select a Category</option>
+                    <option>Facebook Followers</option>
+                    <option>YouTube Subscribers</option>
+                </select>
+
+                <label>Service</label>
+                <select>
+                    <option>Select a Service</option>
+                </select>
+
+                <label>Link</label>
+                <input type="text" placeholder="https://yourlink.com">
+
+                <label>Quantity</label>
+                <input type="number" placeholder="Min: 100 - Max: 5000">
+
+                <div class="charge-box">
+                    <span>Charge</span>
+                    <strong>$0.00</strong>
+                </div>
+
+                <button class="submit-btn">Submit Order</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Floating Help Button -->
+    <div class="floating-help">
+        <i class="fas fa-headset"></i>
+    </div>
+
+</body>
+  </html>
