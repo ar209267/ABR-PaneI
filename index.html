@@ -1,66 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ABR Panel</title>
 
-  <link rel="stylesheet" href="style.css">
-
+  <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-<div class="sidebar">
-  <h2>🔥 ABR Panel</h2>
-
-  <ul>
-    <li class="active">Dashboard</li>
-    <li>Users</li>
-    <li>Analytics</li>
-    <li>Payments</li>
-    <li>Settings</li>
-  </ul>
+<!-- LOGIN SCREEN -->
+<div id="loginPage" class="login-page">
+  <div class="login-box">
+    <h2>ABR PANEL LOGIN</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Login</button>
+    <p id="error"></p>
+  </div>
 </div>
 
-<div class="main">
+<!-- DASHBOARD -->
+<div id="dashboard" class="dashboard hidden">
 
-  <div class="topbar">
-    <h1>Welcome Back</h1>
-
-    <button class="premium-btn">Premium Access</button>
+  <div class="sidebar">
+    <h2>🔥 ABR Panel</h2>
+    <ul>
+      <li class="active">Dashboard</li>
+      <li>Users</li>
+      <li>Analytics</li>
+      <li>Payments</li>
+      <li onclick="logout()">Logout</li>
+    </ul>
   </div>
 
-  <div class="cards">
+  <div class="main">
 
-    <div class="card">
-      <h3>Total Users</h3>
-      <p id="users">0</p>
+    <div class="topbar">
+      <h1>Dashboard</h1>
+      <p>Welcome Admin</p>
     </div>
 
-    <div class="card">
-      <h3>Revenue</h3>
-      <p>$12,500</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Total Users (Demo)</h3>
+        <p>1250</p>
+      </div>
+
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>$12,500</p>
+      </div>
+
+      <div class="card">
+        <h3>Server Status</h3>
+        <p class="online">ONLINE</p>
+      </div>
     </div>
 
-    <div class="card">
-      <h3>Server Status</h3>
-      <p class="online">ONLINE</p>
+    <div class="panel-box">
+      <h2>Activity Log</h2>
+      <p>✔ System initialized</p>
+      <p>✔ Admin logged in</p>
+      <p>✔ Database connected</p>
     </div>
 
-  </div>
-
-  <div class="panel-box">
-    <h2>Live Activity</h2>
-
-    <div class="activity">
-      <p>🟢 User Login Success</p>
-      <p>💳 Payment Received</p>
-      <p>⚡ Server Running Smoothly</p>
-      <p>🔔 Notification Sent</p>
-    </div>
   </div>
 
 </div>
