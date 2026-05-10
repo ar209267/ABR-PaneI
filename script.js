@@ -1,6 +1,15 @@
-let count = 0;
+function login(){
+  let user=document.getElementById("username").value;
+  let pass=document.getElementById("password").value;
 
-setInterval(() => {
-  count += Math.floor(Math.random() * 5);
-  document.getElementById('users').innerText = count;
-}, 1500);
+  if(user=="admin" && pass=="1234"){
+    document.getElementById("loginPage").style.display="none";
+    document.getElementById("dashboard").classList.remove("hidden");
+  }else{
+    document.getElementById("error").innerText="Invalid login";
+  }
+}
+
+function logout(){
+  location.reload();
+}
